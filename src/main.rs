@@ -47,7 +47,7 @@ fn samtools_range(pathsam: &str, start:usize, end:usize) -> Result<String, Box< 
   }
 
   for i in lines.iter(){
-    let mutable = i.split(" ").filter(|x| !x.is_empty()).collect::<Vec<_>>();
+    let mutable = i.split("\t").filter(|x| !x.is_empty()).collect::<Vec<_>>();
     if mutable.is_empty() {
       continue
      } else if mutable[3].parse::<usize>().unwrap() >= start && mutable[3].parse::<usize>().unwrap() <= end {

@@ -11,8 +11,8 @@
  ```
 
  ```
-  ./target/debug/rust-samtools-generateid-range 
-         ./sample-files/alignreads-metagenomics.sam  540849 613960
+ ./target/debug/rust-samtools-generateid-range ./sample-files/Col0_C1.100k.sam 3650 4675
+
  ```
  
  Gaurav Sablok
